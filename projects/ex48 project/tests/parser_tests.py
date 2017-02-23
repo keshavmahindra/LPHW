@@ -21,4 +21,4 @@ def test_parser_objects():
     assert_equal(result.object, 'south')
 
 def test_parser_errors():
-    
+    assert_raises(parser.ParserError, parser.parse_sentence, ('number', '3'))
